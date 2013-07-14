@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#===== Bundle =====#
+alias bi="bundle install"
+alias be="bundle exec"
+alias bef="be foreman start"
+alias bes="be rails server"
+alias ber="be rspec"
+
+#===== Docpad =====#
+alias docgen="docpad generate --env static"
+alias docrun="docpad run --env static"
+
+#===== Git =====#
+alias ga="git add"
+alias gc="git commit"
+alias gcm="git commit -m"
+alias gd="git diff --color-words"
+alias gl="git log --oneline"
+alias gs="git status -sb"
+
+#===== Ruby =====#
+alias rac="rake assets:clean"
+alias rap="rake assets:precompile"
+alias cukes="rac && rap && cucumber -p javascript && rac"

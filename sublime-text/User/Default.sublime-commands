@@ -1,0 +1,8 @@
+[
+	// Preferences
+	{
+		"caption": "Projects in Gemfile to local",
+		"command": "local_projects",
+		"keys": [ "ctrl+alt+k" ]
+	}
+]

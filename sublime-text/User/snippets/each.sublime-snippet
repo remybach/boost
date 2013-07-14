@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[.each(${1:${2:arrayName}, }function(${3:i, val}) {
+	$0
+});]]></content>
+	<tabTrigger>.each</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

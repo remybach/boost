@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[echo "<pre>";var_dump($1);die("</pre>");$0]]></content>
+	<tabTrigger>die</tabTrigger>
+	<scope>source.php</scope>
+</snippet>

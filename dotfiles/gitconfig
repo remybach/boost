@@ -1,0 +1,82 @@
+[user]
+	name = Remy Bach
+	email = remy@bach.me.uk
+[core]
+	excludesfile = /Users/remybach/.gitignore
+	quotepath = false
+	pager = less -x4
+
+[color]
+	  branch = auto
+	  diff = auto
+	  status = auto
+
+[color "branch"]
+	  current = yellow reverse
+	  local = yellow
+	  remote = green
+
+[color "diff"]
+	  meta = yellow
+	  frag = magenta
+	  old = red
+	  new = green
+
+[color "status"]
+	  added = yellow
+	  changed = green
+	  untracked = cyan
+
+[alias]
+	st = status -sb
+	ci = commit
+	br = branch
+	co = checkout
+	df = diff --color-words
+	dc = diff --cached
+	lp = log -p --abbrev-commit --color-words
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	ls = log --stat --abbrev-commit
+	l = log --oneline --abbrev-commit
+	lg = log --abbrev-commit --decorate
+	ds = diff --stat
+	rl = reflog --date=relative
+
+	diffc = diff --cached
+
+	oldest-ancestor = !zsh -c 'diff -u <(git rev-list --first-parent "${1:-master}") <(git rev-list --first-parent "${2:-HEAD}") | sed -ne \"s/^ //p\" | head -1' -
+
+	pusha = push --all
+
+	merge = merge --no-ff
+
+	# Show files ignored by git:
+	ign = ls-files -o -i --exclude-standard
+
+	switch = !legit switch \"$@\"
+	branches = !legit branches
+	sprout = !legit sprout \"$@\"
+	unpublish = !legit unpublish \"$@\"
+	harvest = !legit harvest \"$@\"
+	sync = !legit sync \"$@\"
+	publish = !legit publish \"$@\"
+	graft = !legit graft \"$@\"
+	conflicts = !git ls-files -u | cut -f 2 | sort -u
+
+[branch]
+	autosetupmerge = true
+	autosetuprebase = always
+
+[push]
+	default = tracking
+
+[merge]
+	conflictstyle = diff3
+	summary = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

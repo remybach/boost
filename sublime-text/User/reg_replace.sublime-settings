@@ -1,0 +1,9 @@
+{
+    "replacements": {
+        "local_projects": {
+            "find": "^gem '(rizzo|avocado|beaker)', (.*)",
+            "replace": "gem '\\1', path: '~/projects/\\1'",
+            "case": false
+        }
+    }
+}

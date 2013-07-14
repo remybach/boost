@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[---
+title: "$1"
+excerpt: "$2"
+layout: "post"
+className: "blog"
+posted: "2013-$3"
+status: "live"
+---
+
+$0]]></content>
+	<tabTrigger>docpost</tabTrigger>
+</snippet>
+<!-- status: "${4:draft/live}" -->

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[).submit(function(${1:e}) {
+	$0${2:
+	$1.preventDefault();${3:
+	return false;}}
+});]]></content>
+	<tabTrigger>).submit</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

@@ -1,0 +1,4 @@
+<snippet>
+	<content><![CDATA[if(window.console&&window.console.log)console.log($1);$0]]></content>
+	<tabTrigger>cl</tabTrigger>
+</snippet>

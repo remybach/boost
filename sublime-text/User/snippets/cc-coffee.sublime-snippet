@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[console.count($1) if window.console]]></content>
+	<tabTrigger>cc</tabTrigger>
+	<scope>source.coffee</scope>
+</snippet>

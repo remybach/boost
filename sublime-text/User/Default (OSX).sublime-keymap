@@ -1,0 +1,26 @@
+[
+	{ "keys": ["alt+w"], "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" } },
+	// Better Bookmark Shortcuts
+	{ "keys": ["super+b"], "command": "next_bookmark" },
+	{ "keys": ["super+shift+b"], "command": "prev_bookmark" },
+	{ "keys": ["super+ctrl+b"], "command": "toggle_bookmark" },
+	{ "keys": ["super+alt+ctrl+b"], "command": "clear_bookmarks" },
+	// Better goto line:
+	{ "keys": ["super+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+	// Why the heck this isn't the default paste command, I'll never know.
+	{ "keys": ["super+v"], "command": "paste_and_indent" },
+	{ "keys": ["super+shift+v"], "command": "paste" },
+	// This is for the Move Tabs plugin
+	{ "keys": ["super+ctrl+["], "command": "move_view", "args": {"direction": "left"} },
+	{ "keys": ["super+ctrl+]"], "command": "move_view", "args": {"direction": "right"} },
+	// Run macro that sets syntax to JS and formats it as such.
+	{ "keys": ["super+ctrl+f"], "command": "run_macro_file", "args": {"file": "Packages/User/macros/jsformat.sublime-macro"} },
+	// Update projects in Gemfile to point to local
+	{
+		"keys": ["super+ctrl+l"],
+		"command": "reg_replace",
+		"args": {
+			"replacements": ["local_projects"]
+		}
+	}
+]

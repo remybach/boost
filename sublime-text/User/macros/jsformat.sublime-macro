@@ -1,0 +1,10 @@
+[
+	{
+		"args": { "syntax": "Packages/JavaScript/JavaScript.tmLanguage" },
+		"command": "set_file_type"
+	},
+	{
+		"args": null,
+		"command": "js_format"
+	}
+]
