@@ -20,4 +20,6 @@ I [wrote up a blog](http://remy.bach.me.uk/blog/2013/07/boost/) post about it wi
 
 ## Usage
 
-Simply `cd` into the directory and then type `./install.sh OS` replacing `OS` with one of: `Gnome`, `OSX`, or `Ubuntu`.
+First, put any ssh keys you use in the `ssh` directory (they'll be ignored from the repo), then make a file in the `config` directory called `repos.cfg` and put each repo you'd want cloned on it's own line.
+
+Once that's all done, simply `cd` into the directory and then type `./install.sh OS` replacing `OS` with one of: `Gnome`, `OSX`, or `Ubuntu`.
