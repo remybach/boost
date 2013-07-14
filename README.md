@@ -17,3 +17,7 @@
 What all started out as me wanting to do what all the "cool kids" were doing and getting a dotfiles repo going, ended up in me writing a script that will get me all set up on any new Linux/OSX system (of which the dotfiles is just a teeny tiny part).
 
 I [wrote up a blog](http://remy.bach.me.uk/blog/2013/07/boost/) post about it with some more info.
+
+## Usage
+
+Simply `cd` into the directory and then type `./install.sh OS` replacing `OS` with one of: `Gnome`, `OSX`, or `Ubuntu`.
